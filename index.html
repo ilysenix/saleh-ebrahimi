@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700&display=swap" 
+    rel="stylesheet"
+  >
+  <title>فرم ثبت نام</title>
+  <style>
+    /* پس‌زمینه گرادیان و تنظیمات عمومی */
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #545454, #764ba2);
+      font-family: 'Vazirmatn', Tahoma, Arial, sans-serif;
+    }
+
+    /* کارت فرم */
+    .container {
+      background: #fff;
+      width: 320px;
+      padding: 30px 20px;
+      border-radius: 15px;
+      box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    .container h2 {
+      margin-bottom: 25px;
+      color: #333;
+      font-weight: 500;
+      letter-spacing: 1px;
+    }
+
+    /* برچسب‌ها */
+    label {
+      display: block;
+      margin: 0 0 5px;
+      font-size: 14px;
+      color: #555;
+      text-align: right;
+    }
+
+    /* فیلدهای ورودی */
+    input {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 15px;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      font-size: 14px;
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
+
+    input:focus {
+      border-color: #764ba2;
+      box-shadow: 0 0 5px rgba(118, 75, 162, 0.5);
+      outline: none;
+    }
+
+    /* دکمه ثبت‌نام */
+    button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 5px;
+      border: none;
+      border-radius: 8px;
+      background: linear-gradient(135deg, #545454, #764ba2);
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: linear-gradient(135deg, #3d3357);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form>
+      <h2>فرم ثبت نام</h2>
+
+      <label for="email">ایمیل</label>
+      <input 
+        type="email" 
+        id="email" 
+        name="email" 
+        placeholder="example@domain.com" 
+        required
+      >
+
+      <label for="password">رمز عبور</label>
+      <input 
+        type="password" 
+        id="password" 
+        name="password" 
+        placeholder="حداقل ۸ کاراکتر" 
+        required
+      >
+
+      <label for="confirm">تکرار رمز عبور</label>
+      <input 
+        type="password" 
+        id="confirm" 
+        name="confirm" 
+        placeholder="رمز را مجدداً وارد کنید" 
+        required
+      >
+
+      <label for="phone">شماره موبایل</label>
+      <input 
+        type="tel" 
+        id="phone" 
+        name="phone" 
+        placeholder="09xxxxxxxxx" 
+        required
+      >
+
+      <button type="submit">ثبت نام</button>
+    </form>
+  </div>
+</body>
+</html>
